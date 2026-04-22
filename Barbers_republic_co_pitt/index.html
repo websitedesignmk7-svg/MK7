@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sydney Bro’s Barber Shop PTY LTD | Premium Grooming</title>
+    <title>Barbers republic co pitt | Premium Grooming</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -21,7 +21,6 @@
             --youtube: #FF0000;
         }
         
-        /* Smooth scrolling configuration */
         html {
             scroll-behavior: smooth !important;
         }
@@ -58,12 +57,12 @@
 
         .hero-image-side {
             width: 60%;
-            background-image: url('https://i.imgur.com/XM6PSy9.jpg');
+            background-image: url('https://lh3.googleusercontent.com/p/AF1QipNIXvP-Ie4B5lmEyMwywxsu49ux7UlMj88wuwQd=s1360-w1360-h1020-rw');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
-            transform: scale(1.1); /* For GSAP zoom-in start */
+            transform: scale(1);
         }
 
         .hero-image-side::after {
@@ -84,7 +83,6 @@
             border-left: 1px solid rgba(212, 175, 55, 0.1);
         }
 
-        /* Seamless Scrolling Style - FAST VERSION */
         .carousel-container {
             position: relative;
             width: 100%;
@@ -96,7 +94,7 @@
         .carousel-track {
             display: flex;
             width: max-content;
-            animation: scroll-infinite 12s linear infinite; 
+            animation: scroll-infinite 25s linear infinite; 
         }
         
         .carousel-container:hover .carousel-track {
@@ -253,15 +251,14 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 nav-blur border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold serif tracking-widest uppercase glow-text">SYDNEY BRO’S <span class="gold-text">PTY LTD.</span></div>
+            <div class="text-2xl font-bold serif tracking-widest uppercase glow-text">BARBERS REPUBLIC <span class="gold-text">CO PITT</span></div>
             <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.25em] font-bold">
                 <a href="#home" class="nav-link-effect transition-colors">Home</a>
                 <a href="#gallery" class="nav-link-effect transition-colors">Salon</a>
                 <a href="#menu" class="nav-link-effect transition-colors">Prices</a>
-                <!-- Portfolio removed -->
                 <a href="#location" class="nav-link-effect transition-colors">Location</a>
             </div>
-            <a href="https://www.fresha.com/lvp/sydney-bros-barber-shop-111-york-st-sydney-9QXWoE" target="_blank" class="btn-primary px-6 py-2 rounded-sm text-[10px] uppercase tracking-widest">Book Now</a>
+            <a href="https://www.instagram.com/barbersrepubliccopitt/" target="_blank" class="btn-primary px-6 py-2 rounded-sm text-[10px] uppercase tracking-widest">Connect</a>
         </div>
     </nav>
 
@@ -270,21 +267,21 @@
         <div class="hero-image-side"></div>
         <div class="hero-content-side">
             <div class="gold-text uppercase tracking-[0.5em] text-[10px] mb-6 font-bold tracking-widest">Premium Barber Shop</div>
-            <h1 class="text-5xl md:text-7xl serif mb-8 leading-tight glow-text">Sydney Bro’s <br><span class="gold-text">Barber Shop PTY LTD</span></h1>
+            <h1 class="text-5xl md:text-7xl serif mb-8 leading-tight glow-text">Barbers Republic <br><span class="gold-text">Co Pitt</span></h1>
             <p class="text-gray-400 text-sm md:text-base mb-10 font-light leading-relaxed">
-                Premium grooming for the modern gentleman in Sydney, Australia. Discover the true art of barbering.
+                Premium grooming for the modern gentleman in the heart of Sydney. Discover the true art of barbering at Shop 4/250 Pitt St.
             </p>
             <div class="flex items-center gap-6">
                 <a href="#menu" class="inline-block bg-[#d4af37] text-black px-12 py-5 font-bold uppercase text-[10px] tracking-widest hover:bg-white transition-all shadow-[0_0_15px_rgba(212,175,55,0.3)]">Explore Prices</a>
                 <div class="flex gap-4">
-                    <a href="https://wa.me/61410531228" target="_blank" class="text-white/60 hover:text-[#25D366] hover:scale-110 transition-all text-2xl"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/sydneybrosbarbershop/" target="_blank" class="text-white/60 hover:text-[#E4405F] hover:scale-110 transition-all text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/61468969917" target="_blank" class="text-white/60 hover:text-[#25D366] hover:scale-110 transition-all text-2xl"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/barbersrepubliccopitt/" target="_blank" class="text-white/60 hover:text-[#E4405F] hover:scale-110 transition-all text-2xl"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Carousel (Fast Loop) -->
+    <!-- Experience Carousel -->
     <section id="gallery" class="py-24 bg-black overflow-hidden relative border-y border-white/5">
         <div class="text-center mb-16 relative z-10">
             <h3 class="gold-text uppercase tracking-[0.4em] text-xs mb-3 font-bold">Premium Heritage</h3>
@@ -293,64 +290,58 @@
         
         <div class="carousel-container relative z-10">
             <div class="carousel-track">
-                <!-- Original Items -->
-                <div class="carousel-item"><img src="https://i.imgur.com/z2plEZx.jpg" alt="Service"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/1RTe1ED.jpg" alt="Service"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/CoRvUoM.jpg" alt="Barber"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/hECgfBu.jpg" alt="Style"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/d8dgTbR.jpg" alt="Haircut"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/djPoXh8.jpg" alt="Shave"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/NrVJFxG.jpg" alt="Service"></div>
+                <!-- Data Images -->
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNM5mRO5qYh6B2afELH7kUlASm4AJjACMdYRcKK=s1360-w1360-h1020-rw" alt="Interior"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHYLxcdU7zeR5KPeFUCFOHBR-2D2KSpTK-nCPj9cd1pALLpZptP3UOaMW-iQDE8kgVOI1R9NsESUIw6PiwOHSivOHtCwpDwu6s67WG4zJ19hbDVEzYZOuTG38SmXYr8y-Bjjc1FHc6txwUj=s1360-w1360-h1020-rw" alt="Detail"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGjrdQA26O6tNSX-L8Ker2Lza-fA_yzuUJeSQl7mlx_lAWSbsrR8ZPin0Ggu869ETAtiysOm09B-fpKvQfw_6L1NLwwkZ4kHJE8yUVTvgZ3qsz_PQkfigqaVr72PfDJooHbEMYn07BEQSA=s1360-w1360-h1020-rw" alt="Setup"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGH5_6eSPLMglD80FVVkJzMcvlhhV0qZVKs4-CMKjKzXcm67-tixsr2ImuKTvEVyt6QeD-6GhgiWEE0X9PIkVGUY4DdC48YDsykY85Rtc_zBcNyBI7Tieb0LuVTBN-0GOaqKQREEPmwsBmZ=s1360-w1360-h1020-rw" alt="Workspace"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOd18T0OyrMuTCxZVjQIe0-BL43sFrUeC0efm1J=s1360-w1360-h1020-rw" alt="Grooming"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHsMAqBW1ffxypnyQGmONQa5sUBnIalct_Q21bJGeRnMK9dCDPzK2547QW8V9NkzYZPRdbEx4-G5JNA0y9C-8LfzAEWDH7l8SznlHuVOtFLOMJmo8w4_Ljt5NrSeGEizu1sNluyt2tpELg=s1360-w1360-h1020-rw" alt="Barbering"></div>
                 
-                <!-- Cloned Items for Seamless Loop -->
-                <div class="carousel-item"><img src="https://i.imgur.com/z2plEZx.jpg" alt="Service"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/1RTe1ED.jpg" alt="Service"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/CoRvUoM.jpg" alt="Barber"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/hECgfBu.jpg" alt="Style"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/d8dgTbR.jpg" alt="Haircut"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/djPoXh8.jpg" alt="Shave"></div>
-                <div class="carousel-item"><img src="https://i.imgur.com/NrVJFxG.jpg" alt="Service"></div>
+                <!-- Clones -->
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNM5mRO5qYh6B2afELH7kUlASm4AJjACMdYRcKK=s1360-w1360-h1020-rw" alt="Interior"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHYLxcdU7zeR5KPeFUCFOHBR-2D2KSpTK-nCPj9cd1pALLpZptP3UOaMW-iQDE8kgVOI1R9NsESUIw6PiwOHSivOHtCwpDwu6s67WG4zJ19hbDVEzYZOuTG38SmXYr8y-Bjjc1FHc6txwUj=s1360-w1360-h1020-rw" alt="Detail"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGjrdQA26O6tNSX-L8Ker2Lza-fA_yzuUJeSQl7mlx_lAWSbsrR8ZPin0Ggu869ETAtiysOm09B-fpKvQfw_6L1NLwwkZ4kHJE8yUVTvgZ3qsz_PQkfigqaVr72PfDJooHbEMYn07BEQSA=s1360-w1360-h1020-rw" alt="Setup"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGH5_6eSPLMglD80FVVkJzMcvlhhV0qZVKs4-CMKjKzXcm67-tixsr2ImuKTvEVyt6QeD-6GhgiWEE0X9PIkVGUY4DdC48YDsykY85Rtc_zBcNyBI7Tieb0LuVTBN-0GOaqKQREEPmwsBmZ=s1360-w1360-h1020-rw" alt="Workspace"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOd18T0OyrMuTCxZVjQIe0-BL43sFrUeC0efm1J=s1360-w1360-h1020-rw" alt="Grooming"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHsMAqBW1ffxypnyQGmONQa5sUBnIalct_Q21bJGeRnMK9dCDPzK2547QW8V9NkzYZPRdbEx4-G5JNA0y9C-8LfzAEWDH7l8SznlHuVOtFLOMJmo8w4_Ljt5NrSeGEizu1sNluyt2tpELg=s1360-w1360-h1020-rw" alt="Barbering"></div>
             </div>
         </div>
     </section>
 
     <!-- Prices Section -->
     <section id="menu" class="py-24 px-6 bg-[#080808] relative">
-        <!-- Decoration background -->
         <div class="absolute top-0 right-0 w-96 h-96 bg-[#d4af37] rounded-full blur-[200px] opacity-[0.03]"></div>
         
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-20 section-title">
                 <h3 class="gold-text uppercase tracking-[0.4em] text-xs mb-4 font-bold">Official Price List</h3>
-                <h2 class="text-5xl serif glow-text">Premium Grooming Services</h2>
+                <h2 class="text-5xl serif glow-text">Grooming Services</h2>
             </div>
 
             <div class="grid md:grid-cols-2 gap-12">
-                <!-- Column 1 -->
                 <div class="space-y-12">
                     <div class="menu-category-card">
-                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i class="fas fa-cut mr-3 text-sm"></i> Hair Cuts</h4>
+                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i class="fas fa-cut mr-3 text-sm"></i> Haircuts</h4>
                         <div class="space-y-2">
-                            <div class="menu-item"><span>Buzz Cut - One Size</span><span class="price-tag-sm">$18</span></div>
-                            <div class="menu-item"><span>Buzz Cut - Two Size</span><span class="price-tag-sm">$25</span></div>
+                            <div class="menu-item"><span>Bar Cut</span><span class="price-tag-sm">$20</span></div>
+                            <div class="menu-item"><span>BC</span><span class="price-tag-sm">$25</span></div>
                             <div class="menu-item"><span>Style Cut</span><span class="price-tag-sm">$35</span></div>
                             <div class="menu-item"><span>Zero Fade</span><span class="price-tag-sm">$40</span></div>
                             <div class="menu-item"><span>Skin Fade</span><span class="price-tag-sm">$45</span></div>
-                            <div class="menu-item"><span>Long Hair</span><span class="price-tag-sm">$40</span></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Column 2 -->
                 <div class="space-y-12">
                     <div class="menu-category-card">
-                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i class="fas fa-hand-sparkles mr-3 text-sm"></i> Beard Grooming</h4>
+                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i class="fas fa-hand-sparkles mr-3 text-sm"></i> Beard & Maintenance</h4>
                         <div class="space-y-2">
-                            <div class="menu-item"><span>Wet Shave</span><span class="price-tag-sm">$35</span></div>
-                            <div class="menu-item"><span>Beard Trim - One Size</span><span class="price-tag-sm">$20</span></div>
-                            <div class="menu-item"><span>Beard Trim & Razor Work</span><span class="price-tag-sm">$35</span></div>
-                            <div class="menu-item"><span>Beard Line up Only</span><span class="price-tag-sm">$20</span></div>
-                            <div class="menu-item"><span>Waxing</span><span class="price-tag-sm">From $15</span></div>
+                            <div class="menu-item"><span>Beard Trim & Line Up</span><span class="price-tag-sm">$30</span></div>
+                            <div class="menu-item"><span>Beard Trim</span><span class="price-tag-sm">$20</span></div>
+                            <div class="menu-item"><span>Beard Line Up</span><span class="price-tag-sm">$20</span></div>
+                            <div class="menu-item"><span>Clean Shave</span><span class="price-tag-sm">$35</span></div>
+                            <div class="menu-item"><span>Wax Ears & Nose</span><span class="price-tag-sm">$20</span></div>
                         </div>
                     </div>
                 </div>
@@ -360,7 +351,6 @@
 
     <!-- Location & Contact -->
     <section id="location" class="py-24 bg-[#050505] px-6 border-t border-white/5 relative">
-        <!-- Decoration background -->
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#d4af37] rounded-full blur-[200px] opacity-[0.02]"></div>
 
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
@@ -369,24 +359,19 @@
                 <div class="space-y-6">
                     <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
                         <i class="fas fa-location-dot gold-text text-xl"></i>
-                        <p class="text-gray-300 text-sm">K2/2 Market St, Sydney NSW 2000, Australia</p>
+                        <p class="text-gray-300 text-sm">Shop 4/250 Pitt St, Sydney NSW 2000, Australia</p>
                     </div>
                     <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
                         <i class="fas fa-phone gold-text text-xl"></i>
-                        <p class="text-gray-300 text-sm">+61 410 531 228</p>
+                        <a href="tel:+61468969917" class="text-gray-300 text-sm">+61 468 969 917</a>
                     </div>
-                    <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
-                        <i class="fas fa-clock gold-text text-xl"></i>
-                        <p class="text-gray-300 text-sm leading-relaxed">Mon - Fri: 8:00 AM - 6:00 PM <br> Sat: 9:00 AM - 5:00 PM <br> Sun: <span class="gold-text font-bold">Closed</span></p>
-                    </div>
-
-                    <!-- Enhanced Social block -->
+                    
                     <div class="flex gap-4 pt-4">
-                        <a href="https://wa.me/61410531228" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#25D366] transition-all duration-300 hover:shadow-[0_0_15px_rgba(37,211,102,0.25)] group hover:-translate-y-1">
+                        <a href="https://wa.me/61468969917" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#25D366] transition-all duration-300 hover:shadow-[0_0_15px_rgba(37,211,102,0.25)] group hover:-translate-y-1">
                             <i class="fab fa-whatsapp text-2xl group-hover:scale-110 transition-transform" style="color: var(--whatsapp)"></i>
                             <span class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">WhatsApp</span>
                         </a>
-                        <a href="https://www.instagram.com/sydneybrosbarbershop/" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#E4405F] transition-all duration-300 hover:shadow-[0_0_15px_rgba(228,64,95,0.25)] group hover:-translate-y-1">
+                        <a href="https://www.instagram.com/barbersrepubliccopitt/" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#E4405F] transition-all duration-300 hover:shadow-[0_0_15px_rgba(228,64,95,0.25)] group hover:-translate-y-1">
                             <i class="fab fa-instagram text-2xl group-hover:scale-110 transition-transform" style="color: var(--instagram)"></i>
                             <span class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">Instagram</span>
                         </a>
@@ -395,22 +380,20 @@
             </div>
             
             <div class="h-[450px] rounded-2xl overflow-hidden border border-white/10 grayscale invert hover:grayscale-0 hover:invert-0 transition-all duration-[1.5s] map-container">
-                 <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sydney%20Bro%E2%80%99s%20Barber%20Shop%20PTY%20LTD&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 <iframe src="https://maps.google.com/maps?q=Barbers+republic+co+pitt,+Shop+4%2F250+Pitt+St,+Sydney+NSW+2000,+Australia&t=&z=15&ie=UTF8&iwloc=B&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <footer class="py-12 text-center border-t border-white/5 bg-[#030303]">
-        <div class="text-2xl font-bold serif mb-4 tracking-widest uppercase">SYDNEY BRO’S BARBER SHOP PTY LTD<span class="gold-text">.</span></div>
+        <div class="text-2xl font-bold serif mb-4 tracking-widest uppercase">BARBERS REPUBLIC <span class="gold-text">CO PITT</span></div>
         <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em]">Sydney's Premier Grooming Destination</p>
     </footer>
 
-    <!-- GSAP Animations -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             gsap.registerPlugin(ScrollTrigger);
 
-            // 2. Menu Cards Animation
             gsap.from(".section-title", {
                 scrollTrigger: {
                     trigger: "#menu",
@@ -437,7 +420,6 @@
                 });
             });
 
-            // 3. Location Details Animation
             gsap.from(".location-details > div > div", {
                 scrollTrigger: {
                     trigger: "#location",
