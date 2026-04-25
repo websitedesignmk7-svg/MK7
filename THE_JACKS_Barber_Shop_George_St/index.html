@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK BARBERSHOP | Premium Grooming</title>
+    <title>THE JACKS Barber Shop George St | Premium Grooming</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/scroll-behavior-polyfill/2.0.13/scroll-behavior-polyfill.min.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
-        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scroll-behavior-polyfill/2.0.13/scroll-behavior-polyfill.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
@@ -22,9 +18,9 @@
             --whatsapp: #25D366;
             --instagram: #E4405F;
             --facebook: #1877F2;
-            --youtube: #FF0000;
+            --tiktok: #ff0050;
         }
-
+        
         html {
             scroll-behavior: smooth !important;
         }
@@ -35,18 +31,9 @@
             font-family: 'Inter', sans-serif;
             overflow-x: hidden;
         }
-
-        .serif {
-            font-family: 'Playfair Display', serif;
-        }
-
-        .gold-text {
-            color: var(--gold);
-        }
-
-        .glow-text {
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-        }
+        .serif { font-family: 'Playfair Display', serif; }
+        .gold-text { color: var(--gold); }
+        .glow-text { text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
 
         .btn-primary {
             background-color: var(--gold);
@@ -54,7 +41,6 @@
             font-weight: 700;
             transition: all 0.3s ease;
         }
-
         .btn-primary:hover {
             background-color: white;
             transform: scale(1.05);
@@ -71,7 +57,7 @@
 
         .hero-image-side {
             width: 60%;
-            background-image: url('https://lh3.googleusercontent.com/p/AF1QipPNlRsWj3lmFZuQRpQBv_HhGR0XpGk4L9cakbye=s1360-w1360-h1020-rw');
+            background-image: url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvrg10_UM5q66Mm-MJ7Uwln-NOxmQNMGv6zS9QCXKqRRujIX03UTJ3e2aApeRbYGws9auNlGY9t0Cnsv0Po88jJp90OTVP2t8bOW_eDuHveLnEt6KQTwH1nhElH61LEQpf1mU=s1360-w1360-h1020-rw');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -83,7 +69,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+            background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
         }
 
         .hero-content-side {
@@ -108,26 +94,21 @@
         .carousel-track {
             display: flex;
             width: max-content;
-            animation: scroll-infinite 15s linear infinite;
+            animation: scroll-infinite 25s linear infinite; 
         }
-
+        
         .carousel-container:hover .carousel-track {
             animation-play-state: paused;
         }
 
         @keyframes scroll-infinite {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); } 
         }
 
         .carousel-item {
             width: 350px;
-            height: 450px;
+            height: 450px; 
             flex-shrink: 0;
             padding: 0 15px;
         }
@@ -135,7 +116,7 @@
         .carousel-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; 
             border-radius: 12px;
             filter: grayscale(30%);
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,27 +131,10 @@
         }
 
         @media (max-width: 1024px) {
-            .hero-container {
-                flex-direction: column-reverse;
-            }
-
-            .hero-content-side {
-                width: 100%;
-                height: 50%;
-                padding: 2rem;
-                text-align: center;
-                align-items: center;
-            }
-
-            .hero-image-side {
-                width: 100%;
-                height: 50%;
-            }
-
-            .carousel-item {
-                width: 280px;
-                height: 380px;
-            }
+            .hero-container { flex-direction: column-reverse; }
+            .hero-content-side { width: 100%; height: 50%; padding: 2rem; text-align: center; align-items: center; }
+            .hero-image-side { width: 100%; height: 50%; }
+            .carousel-item { width: 280px; height: 380px; }
         }
 
         .nav-blur {
@@ -183,7 +147,6 @@
             padding-bottom: 4px;
             transition: color 0.3s ease;
         }
-
         .nav-link-effect::before {
             content: '';
             position: absolute;
@@ -195,11 +158,9 @@
             transition: width 0.3s ease, left 0.3s ease;
             box-shadow: 0 0 8px rgba(212, 175, 55, 0.8);
         }
-
         .nav-link-effect:hover {
             color: var(--gold);
         }
-
         .nav-link-effect:hover::before {
             width: 100%;
             left: 0;
@@ -211,7 +172,7 @@
             border: 1px solid rgba(212, 175, 55, 0.15);
             padding: 2rem;
             border-radius: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
@@ -220,10 +181,8 @@
         .menu-category-card::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: -100%;
-            width: 50%;
-            height: 100%;
+            top: 0; left: -100%;
+            width: 50%; height: 100%;
             background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.1), transparent);
             transform: skewX(-25deg);
             transition: 0.7s;
@@ -245,18 +204,17 @@
             justify-content: space-between;
             align-items: center;
             padding: 0.8rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            border-bottom: 1px solid rgba(255,255,255,0.04);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             cursor: pointer;
             border-radius: 6px;
         }
-
+        
         .menu-item::after {
             content: '';
             position: absolute;
-            bottom: -1px;
-            left: 0;
+            bottom: -1px; left: 0;
             width: 0%;
             height: 1px;
             background: var(--gold);
@@ -276,10 +234,8 @@
         .menu-item:hover::after {
             width: 100%;
         }
-
-        .menu-item:last-child {
-            border-bottom: none;
-        }
+        
+        .menu-item:last-child { border-bottom: none; }
 
         .price-tag-sm {
             font-weight: 700;
@@ -289,23 +245,19 @@
         }
     </style>
 </head>
-
 <body>
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 nav-blur border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold serif tracking-widest uppercase glow-text">AK <span
-                    class="gold-text">BARBERSHOP</span></div>
+            <div class="text-2xl font-bold serif tracking-widest uppercase glow-text">THE JACKS <span class="gold-text">BARBER SHOP</span></div>
             <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.25em] font-bold">
                 <a href="#home" class="nav-link-effect transition-colors">Home</a>
                 <a href="#gallery" class="nav-link-effect transition-colors">Salon</a>
                 <a href="#menu" class="nav-link-effect transition-colors">Prices</a>
                 <a href="#location" class="nav-link-effect transition-colors">Location</a>
             </div>
-            <a href="https://www.google.com/maps/place/AK+BARBERSHOP/@-33.8705004,150.9566174,17z/data=!4m15!1m8!3m7!1s0x6b12bd8771f438dd:0x444badbf7ba106ab!2sSydney+Style+Hair+Dresser+Barber!8m2!3d-33.8722321!4d150.9550871!10e5!16s%2Fg%2F1td8z8l3!3m5!1s0x6b12bd90b6d1211f:0x26bd630c8e92192c!8m2!3d-33.8703257!4d150.9567031!16s%2Fg%2F11nyx23nx6?entry=ttu&g_ep=EgoyMDI2MDQyMC4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                class="btn-primary px-6 py-2 rounded-sm text-[10px] uppercase tracking-widest">Directions</a>
+            <a href="https://www.fresha.com/en-GB/lvp/the-jacks-barber-shop-george-st-george-street-haymarket-2GXB93" target="_blank" class="btn-primary px-6 py-2 rounded-sm text-[10px] uppercase tracking-widest">Book Now</a>
         </div>
     </nav>
 
@@ -313,25 +265,16 @@
     <section id="home" class="hero-container">
         <div class="hero-image-side"></div>
         <div class="hero-content-side">
-            <div class="gold-text uppercase tracking-[0.5em] text-[10px] mb-6 font-bold tracking-widest">Premium Barber
-                Shop</div>
-            <h1 class="text-5xl md:text-7xl serif mb-8 leading-tight glow-text">AK <br><span
-                    class="gold-text">BARBERSHOP</span></h1>
+            <div class="gold-text uppercase tracking-[0.5em] text-[10px] mb-6 font-bold tracking-widest">Premium Barber Shop</div>
+            <h1 class="text-5xl md:text-7xl serif mb-8 leading-tight glow-text">THE JACKS <br><span class="gold-text">George St</span></h1>
             <p class="text-gray-400 text-sm md:text-base mb-10 font-light leading-relaxed">
-                Premium grooming for the modern gentleman in Fairfield. Experience the highest standard of barbering
-                excellence.
+                Premium grooming for the modern gentleman in Haymarket, NSW. Experience mastery in every cut at THE JACKS.
             </p>
             <div class="flex items-center gap-6">
-                <a href="#menu"
-                    class="inline-block bg-[#d4af37] text-black px-12 py-5 font-bold uppercase text-[10px] tracking-widest hover:bg-white transition-all shadow-[0_0_15px_rgba(212,175,55,0.3)]">Explore
-                    Prices</a>
+                <a href="#menu" class="inline-block bg-[#d4af37] text-black px-12 py-5 font-bold uppercase text-[10px] tracking-widest hover:bg-white transition-all shadow-[0_0_15px_rgba(212,175,55,0.3)]">Explore Prices</a>
                 <div class="flex gap-4">
-                    <a href="https://wa.me/61424444741" target="_blank"
-                        class="text-white/60 hover:text-[#25D366] hover:scale-110 transition-all text-2xl"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/akbarberrs/" target="_blank"
-                        class="text-white/60 hover:text-[#E4405F] hover:scale-110 transition-all text-2xl"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/61499416107" target="_blank" class="text-white/60 hover:text-[#25D366] hover:scale-110 transition-all text-2xl"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.tiktok.com/@jacksbarbershop0" target="_blank" class="text-white/60 hover:text-[#ff0050] hover:scale-110 transition-all text-2xl"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
@@ -343,48 +286,22 @@
             <h3 class="gold-text uppercase tracking-[0.4em] text-xs mb-3 font-bold">Premium Heritage</h3>
             <h2 class="text-5xl serif glow-text">SALON</h2>
         </div>
-
+        
         <div class="carousel-container relative z-10">
             <div class="carousel-track">
-                <!-- Removed problematic Salon 7 image -->
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipPf38qHO_u91uNVG4Iu-Eva8-tgg1cx7_biWTT1=s1360-w1360-h1020-rw"
-                        alt="Salon 1"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipNNHfTEkgPJrkMY6CmwPfOElzU-ZwvQwF29I0NF=s1360-w1360-h1020-rw"
-                        alt="Salon 2"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipOBB6fwEVxhAKNBGMCvDV6NaqWuX10RJVlDpzvh=s1360-w1360-h1020-rw"
-                        alt="Salon 3"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipP257QM-XWGMzVs1nd08DGzbVY_af1hoTDArscV=s1360-w1360-h1020-rw"
-                        alt="Salon 4"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipMECcdo8jiQyFjTVBOFYV4EBjj3iOdU9ywAmzwc=s1360-w1360-h1020-rw"
-                        alt="Salon 5"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/geougc-cs/AMG9lES3gOPcUne4q_-k739DEfmYBEDo4FtuJltLdXmyrQbiO4LCT8fC6KlQLehr1VF5cTukc6cZwSfSphrvsMRmIsMHqkQh_1BBXtl8W9KA4kOtWXCVf_VobLx1Y1rHsaspJwDbBiAFYfUnQ_Yx=s3414-w3414-h1640-rw"
-                        alt="Salon 6"></div>
-
+                <!-- Data Images -->
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0E9l4nQtBa0aeCYDmirhTxU5vCe_i7trPs6y_7KSN3SNluLO_XBTPhIBaWJOAgby1yThCmDBj4KxHnl_klj2UotrPUkKg9lQ-3z5hsAZ2JdJUZlvWd5QqeZjUSvlnXCZVQI-NEA=s1360-w1360-h1020-rw" alt="Salon"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvrg10_UM5q66Mm-MJ7Uwln-NOxmQNMGv6zS9QCXKqRRujIX03UTJ3e2aApeRbYGws9auNlGY9t0Cnsv0Po88jJp90OTVP2t8bOW_eDuHveLnEt6KQTwH1nhElH61LEQpf1mU=s1360-w1360-h1020-rw" alt="Salon Interior"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFtkvjjSIAQDoi96GeVoI3ODu8rLwrs7uk-Ax8wgF_FIsPkwgeL5mDLOvAuwR-Wz3m98pAegR9ntvkwOAL9SqlvkyMyAtREb_uKzMh_1WPwSG9wCqLJir4tjKZqFuxdGuM0XSrzYg=s1360-w1360-h1020-rw" alt="Barbering"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEhLE0lpLMmvmILY2XvJ8MEnsrfTGpHkG66ZPlhiTr55jneRH8IFLyCP_k5A-pxSiDUIFf4Gf91xc8vaXWsIKCSM3NIw4OEfirkAZyZPeWGQPx4M0tBaz2DhngFyKDgKj6A8WHc=s1360-w1360-h1020-rw" alt="Grooming"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFHyHZsRoKZFinWKIdHkM8-i1KAnEPiq3yIkp5pmIBoZHFy7jBGfI5bl1zIoWAeIdVHyr6YUrGQ1Tq5vi4yOyC3hjqWu8XX2u3Y7VM-xaD9M2buuahzHY5Z35gd0RjzyLcAJiQm=s1360-w1360-h1020-rw" alt="Salon View"></div>
+                
                 <!-- Cloned Items for Seamless Loop -->
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipPf38qHO_u91uNVG4Iu-Eva8-tgg1cx7_biWTT1=s1360-w1360-h1020-rw"
-                        alt="Salon 1"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipNNHfTEkgPJrkMY6CmwPfOElzU-ZwvQwF29I0NF=s1360-w1360-h1020-rw"
-                        alt="Salon 2"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipOBB6fwEVxhAKNBGMCvDV6NaqWuX10RJVlDpzvh=s1360-w1360-h1020-rw"
-                        alt="Salon 3"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipP257QM-XWGMzVs1nd08DGzbVY_af1hoTDArscV=s1360-w1360-h1020-rw"
-                        alt="Salon 4"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/p/AF1QipMECcdo8jiQyFjTVBOFYV4EBjj3iOdU9ywAmzwc=s1360-w1360-h1020-rw"
-                        alt="Salon 5"></div>
-                <div class="carousel-item"><img
-                        src="https://lh3.googleusercontent.com/geougc-cs/AMG9lES3gOPcUne4q_-k739DEfmYBEDo4FtuJltLdXmyrQbiO4LCT8fC6KlQLehr1VF5cTukc6cZwSfSphrvsMRmIsMHqkQh_1BBXtl8W9KA4kOtWXCVf_VobLx1Y1rHsaspJwDbBiAFYfUnQ_Yx=s3414-w3414-h1640-rw"
-                        alt="Salon 6"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0E9l4nQtBa0aeCYDmirhTxU5vCe_i7trPs6y_7KSN3SNluLO_XBTPhIBaWJOAgby1yThCmDBj4KxHnl_klj2UotrPUkKg9lQ-3z5hsAZ2JdJUZlvWd5QqeZjUSvlnXCZVQI-NEA=s1360-w1360-h1020-rw" alt="Salon"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvrg10_UM5q66Mm-MJ7Uwln-NOxmQNMGv6zS9QCXKqRRujIX03UTJ3e2aApeRbYGws9auNlGY9t0Cnsv0Po88jJp90OTVP2t8bOW_eDuHveLnEt6KQTwH1nhElH61LEQpf1mU=s1360-w1360-h1020-rw" alt="Salon Interior"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFtkvjjSIAQDoi96GeVoI3ODu8rLwrs7uk-Ax8wgF_FIsPkwgeL5mDLOvAuwR-Wz3m98pAegR9ntvkwOAL9SqlvkyMyAtREb_uKzMh_1WPwSG9wCqLJir4tjKZqFuxdGuM0XSrzYg=s1360-w1360-h1020-rw" alt="Barbering"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEhLE0lpLMmvmILY2XvJ8MEnsrfTGpHkG66ZPlhiTr55jneRH8IFLyCP_k5A-pxSiDUIFf4Gf91xc8vaXWsIKCSM3NIw4OEfirkAZyZPeWGQPx4M0tBaz2DhngFyKDgKj6A8WHc=s1360-w1360-h1020-rw" alt="Grooming"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFHyHZsRoKZFinWKIdHkM8-i1KAnEPiq3yIkp5pmIBoZHFy7jBGfI5bl1zIoWAeIdVHyr6YUrGQ1Tq5vi4yOyC3hjqWu8XX2u3Y7VM-xaD9M2buuahzHY5Z35gd0RjzyLcAJiQm=s1360-w1360-h1020-rw" alt="Salon View"></div>
             </div>
         </div>
     </section>
@@ -392,7 +309,7 @@
     <!-- Prices Section -->
     <section id="menu" class="py-24 px-6 bg-[#080808] relative">
         <div class="absolute top-0 right-0 w-96 h-96 bg-[#d4af37] rounded-full blur-[200px] opacity-[0.03]"></div>
-
+        
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-20 section-title">
                 <h3 class="gold-text uppercase tracking-[0.4em] text-xs mb-4 font-bold">Official Price List</h3>
@@ -403,13 +320,10 @@
                 <!-- Column 1 -->
                 <div class="space-y-12">
                     <div class="menu-category-card">
-                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i
-                                class="fas fa-cut mr-3 text-sm"></i> Hair Cuts</h4>
+                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i class="fas fa-cut mr-3 text-sm"></i> Hair Cuts</h4>
                         <div class="space-y-2">
-                            <div class="menu-item"><span>Buzz Cut - One Size</span><span class="price-tag-sm">$18</span>
-                            </div>
-                            <div class="menu-item"><span>Buzz Cut - Two Size</span><span class="price-tag-sm">$25</span>
-                            </div>
+                            <div class="menu-item"><span>Buzz Cut - One Size</span><span class="price-tag-sm">$18</span></div>
+                            <div class="menu-item"><span>Buzz Cut - Two Size</span><span class="price-tag-sm">$25</span></div>
                             <div class="menu-item"><span>Style Cut</span><span class="price-tag-sm">$35</span></div>
                             <div class="menu-item"><span>Zero Fade</span><span class="price-tag-sm">$40</span></div>
                             <div class="menu-item"><span>Skin Fade</span><span class="price-tag-sm">$45</span></div>
@@ -421,16 +335,12 @@
                 <!-- Column 2 -->
                 <div class="space-y-12">
                     <div class="menu-category-card">
-                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i
-                                class="fas fa-hand-sparkles mr-3 text-sm"></i> Beard Grooming</h4>
+                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i class="fas fa-hand-sparkles mr-3 text-sm"></i> Beard Grooming</h4>
                         <div class="space-y-2">
                             <div class="menu-item"><span>Wet Shave</span><span class="price-tag-sm">$35</span></div>
-                            <div class="menu-item"><span>Beard Trim - One Size</span><span
-                                    class="price-tag-sm">$20</span></div>
-                            <div class="menu-item"><span>Beard Trim & Razor Work</span><span
-                                    class="price-tag-sm">$35</span></div>
-                            <div class="menu-item"><span>Beard Line up Only</span><span class="price-tag-sm">$20</span>
-                            </div>
+                            <div class="menu-item"><span>Beard Trim - One Size</span><span class="price-tag-sm">$20</span></div>
+                            <div class="menu-item"><span>Beard Trim & Razor Work</span><span class="price-tag-sm">$35</span></div>
+                            <div class="menu-item"><span>Beard Line up Only</span><span class="price-tag-sm">$20</span></div>
                             <div class="menu-item"><span>Waxing</span><span class="price-tag-sm">From $15</span></div>
                         </div>
                     </div>
@@ -447,51 +357,45 @@
             <div class="location-details">
                 <h2 class="text-4xl serif mb-10 glow-text">Visit Our Salon</h2>
                 <div class="space-y-6">
-                    <div
-                        class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
-                        <i class="fas fa-location-dot gold-text text-xl"></i>
-                        <p class="text-gray-300 text-sm">AK BARBERSHOP, Fairfield NSW</p>
-                    </div>
-                    <a href="tel:+61424444741"
-                        class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors block">
-                        <i class="fas fa-phone gold-text text-xl"></i>
-                        <p class="text-gray-300 text-sm">+61 424 444 741</p>
+                    <a href="https://www.google.com/maps/search/THE+JACKS+Barber+Shop+George+St,+715+George+St,+Haymarket+NSW+2000,+Australia" target="_blank" class="block">
+                        <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
+                            <i class="fas fa-location-dot gold-text text-xl"></i>
+                            <p class="text-gray-300 text-sm">715 George St, Haymarket NSW 2000, Australia</p>
+                        </div>
                     </a>
+                    <a href="tel:+61499416107" class="block">
+                        <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
+                            <i class="fas fa-phone gold-text text-xl"></i>
+                            <p class="text-gray-300 text-sm">+61 499 416 107</p>
+                        </div>
+                    </a>
+                    <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
+                        <i class="fas fa-clock gold-text text-xl"></i>
+                        <p class="text-gray-300 text-sm leading-relaxed">Mon - Sun: Please call for hours <br> Open daily for your convenience</p>
+                    </div>
 
                     <div class="flex gap-4 pt-4">
-                        <a href="https://wa.me/61424444741" target="_blank"
-                            class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#25D366] transition-all duration-300 hover:shadow-[0_0_15px_rgba(37,211,102,0.25)] group hover:-translate-y-1">
-                            <i class="fab fa-whatsapp text-2xl group-hover:scale-110 transition-transform"
-                                style="color: var(--whatsapp)"></i>
-                            <span
-                                class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">WhatsApp</span>
+                        <a href="https://wa.me/61499416107" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#25D366] transition-all duration-300 hover:shadow-[0_0_15px_rgba(37,211,102,0.25)] group hover:-translate-y-1">
+                            <i class="fab fa-whatsapp text-2xl group-hover:scale-110 transition-transform" style="color: var(--whatsapp)"></i>
+                            <span class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">WhatsApp</span>
                         </a>
-                        <a href="https://www.instagram.com/akbarberrs/" target="_blank"
-                            class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#E4405F] transition-all duration-300 hover:shadow-[0_0_15px_rgba(228,64,95,0.25)] group hover:-translate-y-1">
-                            <i class="fab fa-instagram text-2xl group-hover:scale-110 transition-transform"
-                                style="color: var(--instagram)"></i>
-                            <span
-                                class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">Instagram</span>
+                        <a href="https://www.tiktok.com/@jacksbarbershop0" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#ff0050] transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,0,80,0.25)] group hover:-translate-y-1">
+                            <i class="fab fa-tiktok text-2xl group-hover:scale-110 transition-transform" style="color: var(--tiktok)"></i>
+                            <span class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">TikTok</span>
                         </a>
                     </div>
                 </div>
             </div>
-
-            <div
-                class="h-[450px] rounded-2xl overflow-hidden border border-white/10 grayscale invert hover:grayscale-0 hover:invert-0 transition-all duration-[1.5s] map-container">
-                <!-- Corrected Google Maps Embed with specific coordinates for Fairfield -->
-                <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?q=AK%20BARBERSHOP%20Fairfield%20NSW&t=&z=16&ie=UTF8&iwloc=&output=embed"
-                    style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+            
+            <div class="h-[450px] rounded-2xl overflow-hidden border border-white/10 grayscale invert hover:grayscale-0 hover:invert-0 transition-all duration-[1.5s] map-container">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.339239849221!2d151.20208727670876!3d-33.88082507322303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af02a23eeacf%3A0x31b0c0e61e6bba70!2sTHE%20JACKS%20Barber%20Shop%20George%20St!5e0!3m2!1sen!2sau!4v1713500000000!5m2!1sen!2sau" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <footer class="py-12 text-center border-t border-white/5 bg-[#030303]">
-        <div class="text-2xl font-bold serif mb-4 tracking-widest uppercase">AK BARBERSHOP<span
-                class="gold-text">.</span></div>
-        <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em]">Premier Grooming Destination</p>
+        <div class="text-2xl font-bold serif mb-4 tracking-widest uppercase">THE JACKS <span class="gold-text">BARBER SHOP.</span></div>
+        <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em]">Haymarket's Premier Grooming Destination</p>
     </footer>
 
     <script>
@@ -549,5 +453,4 @@
         });
     </script>
 </body>
-
 </html>
