@@ -260,14 +260,14 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 nav-blur border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold serif tracking-widest uppercase glow-text">MyBarberShop </div>
+            <div class="text-2xl font-bold serif tracking-widest uppercase glow-text">MyBarberShop <span class="gold-text">.</span></div>
             <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.25em] font-bold">
                 <a href="#home" class="nav-link-effect transition-colors">Home</a>
                 <a href="#gallery" class="nav-link-effect transition-colors">Salon</a>
                 <a href="#menu" class="nav-link-effect transition-colors">Prices</a>
                 <a href="#location" class="nav-link-effect transition-colors">Location</a>
             </div>
-            <a href="https://book.squareup.com/appointments/pbo5ywbg2peuie/location/8Z4466RC42Q8A/services?rwg_token=AFd1xnEVFtnYVXTlp7RrIL-HgHRwSkRN_6gHkU8V28LgnEGUJDgbpt1tuBa1Qex_5mzNrjEgrqvLfvExY-nyltiFZ_32BRaLUg%3D%3D" target="_blank" class="btn-primary px-6 py-2 rounded-sm text-[10px] uppercase tracking-widest">Book Now</a>
+            
         </div>
     </nav>
 
@@ -276,7 +276,7 @@
         <div class="hero-image-side" style="background-image: url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAHR7eIfP_5KRx9XAJreC9A_GbcD6YEINoY8kg0jWyz_lzNuOjL9zG25KGIbhs76F8XtcvuX_1K55ZrfucuCQG8G9E8M-V0IpBtBtgvJOVc-ZcnZoQoX4B6DqsmVF_hwsVYCyyswrA=s1360-w1360-h1020-rw') !important;"></div>
         <div class="hero-content-side">
             <div class="gold-text uppercase tracking-[0.5em] text-[10px] mb-6 font-bold tracking-widest">Premium Barber Shop</div>
-            <h1 class="text-5xl md:text-7xl serif mb-8 leading-tight glow-text">MyBarberShop <br><span class="gold-text">co Wynyard</span></h1>
+            <h1 class="text-5xl md:text-7xl serif mb-8 leading-tight glow-text">MyBarberShop<br><span class="gold-text"></span></h1>
             <p class="text-gray-400 text-sm md:text-base mb-10 font-light leading-relaxed">
                 Elite grooming services tailored for the modern gentleman. Experience superior craftsmanship in the heart of the city.
             </p>
@@ -285,7 +285,7 @@
                 <div class="flex gap-4">
                     
                     
-                    <a href="https://www.facebook.com/p/My-Barber-Shop-100066632708654/" target="_blank" class="text-white/60 hover:text-[#1877F2] hover:scale-110 transition-all text-2xl"><i class="fab fa-facebook-f"></i></a>
+                    
                 </div>
             </div>
         </div>
@@ -321,7 +321,34 @@
     <section id="location" class="py-24 bg-[#050505] px-6 border-t border-white/5 relative">
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#d4af37] rounded-full blur-[200px] opacity-[0.02]"></div>
 
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10"></div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
+            <div class="location-details">
+                <h2 class="text-4xl serif mb-10 glow-text">Find Us</h2>
+                <div class="space-y-6">
+                    <a href="https://www.google.com/maps/place/MyBarberShop/@61.5813821,-149.4375086,18z/data=!4m6!3m5!1s0x56c8de1331163493:0xd8123eeb26bef14e!8m2!3d61.5813394!4d-149.4381533!16s%2Fg%2F1tggt7yt?entry=ttu&amp;g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors block">
+                        <i class="fas fa-location-dot gold-text text-xl"></i>
+                        <p class="text-gray-300 text-sm">MyBarberShop</p>
+                    </a>
+                    <a href="+1 907-440-4095" class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors block">
+                        <i class="fas fa-phone gold-text text-xl"></i>
+                        <p class="text-gray-300 text-sm">+61 451 595 515</p>
+                    </a>
+                    <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
+                        <i class="fas fa-clock gold-text text-xl"></i>
+                        <p class="text-gray-300 text-sm leading-relaxed">Mon - Fri: 8:30 AM - 6:00 PM <br> Sat: 9:00 AM - 5:00 PM <br> Sun: <span class="gold-text font-bold uppercase">Closed</span></p>
+                    </div>
+
+                    <div class="flex gap-4 pt-4">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="h-[450px] rounded-2xl overflow-hidden border border-white/10 grayscale invert hover:grayscale-0 hover:invert-0 transition-all duration-[1.5s] map-container">
+                 <iframe src="https://www.google.com/maps/place/MyBarberShop/@61.5813821,-149.4375086,18z/data=!4m6!3m5!1s0x56c8de1331163493:0xd8123eeb26bef14e!8m2!3d61.5813394!4d-149.4381533!16s%2Fg%2F1tggt7yt?entry=ttu&amp;g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
     </section>
 
     <footer class="py-12 text-center border-t border-white/5 bg-[#030303]">
