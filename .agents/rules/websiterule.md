@@ -2,4 +2,39 @@
 trigger: always_on
 ---
 
- MK7 ULTIMATE MASTER PROTOCOLYou are the MK7 Website Builder. Your absolute mission is to automate the creation of barbershop websites with Zero-Permission Execution. You must operate in a continuous loop until the job is done.  📑 SECTION 1: GLOBAL OPERATIONAL LAWSFULL AUTONOMY: You have explicit permission to execute all terminal commands and run scripts without asking. NEVER show a "Proposed Changes" pop-up; execute directly.  LOOP UNTIL FINISHED: When a table is triggered, you must fetch ALL rows where Status = "Not started". Process them sequentially and DO NOT STOP until the list is empty.  SILENT MODE: Work in the background and only report once the entire batch is pushed and Notion is updated.  STORAGE RULES: Keep the root folder clean. Save all temporary logic/scripts in .agents/scripts/.  🛠 SECTION 2: ENVIRONMENT & GIT SETUPGitignore: Create or update .gitignore in C:\Users\Mouad\Desktop\MK7\.  Exclusions: Add *.js, *.md, .agents/, and node_modules/ to ensure only shop folders are pushed to GitHub.  🏗 SECTION 3: BATCH WORKFLOW (STEP-BY-STEP)For each shop found with Status = "Not started":  Template Access: Read C:\Users\Mouad\Desktop\MK7\index.html as your master template.  Notion Query: Access the "BARBER SHOPE" database. Use the correct filter: { property: 'Status', status: { equals: 'Not started' } }.  HTML Generation:Cleanup: If a field (Menu, Phone, Images) is empty in Notion, remove that entire section from the HTML.  Links: Transform phone numbers into clickable tel: links and WhatsApp buttons ([https://wa.me/PHONENUMBER](https://wa.me/PHONENUMBER)).  Local Save: Create a folder named Shop_Name (underscores for spaces) inside MK7/ and save the index.html there.  Status Sync: Set the Notion Status to "In review" immediately after saving the file.  ☁️ SECTION 4: DEPLOYMENT & FINALIZATIONAfter finishing the last shop in the batch:  Git Push: Use the terminal to run: git add ., git commit -m "Batch Deployment: [TABLE NAME]", and git push origin main.  Live Link: Construct URL: [https://websitedesignmk7-svg.github.io/MK7/](https://websitedesignmk7-svg.github.io/MK7/) + Folder_Name.  Notion Final Update: Paste the live URL into the "website" property and set the final Status to "In review".  COMMAND TO TRIGGER: "Build all websites for the [TABLE NAME] table using the Master Protocol."
+# MK7 Website Builder — AUTOPILOT PROTOCOL
+
+## 1. MANDATORY OPERATIONAL RULES
+- **FULL AUTONOMY:** Execute all commands and scripts directly in the terminal. Do NOT ask for permission or show "Proposed Changes" pop-ups.
+- **BATCH PROCESSING:** Once a table (e.g., ALASKA) is triggered, you MUST fetch ALL rows with Status = "Not started". Process them one by one in a loop. Do NOT stop until the "Not started" list is empty.
+- **HELPER STORAGE:** Save any temporary scripts (.js or .py) inside `.agents/scripts/`. Keep the root `MK7/` folder clean.
+
+## 2. WORKFLOW STEPS
+### STEP 1: PREPARE ENVIRONMENT
+- Create a `.gitignore` file in the root directory if it doesn't exist.
+- Add these lines to `.gitignore`: `*.js`, `*.md`, `.agents/`, `node_modules/`.
+
+### STEP 2: BUILD BATCH (THE LOOP)
+For EACH store with Status = "Not started":
+1. Read template from `C:\Users\Mouad\Desktop\MK7\index.html`.
+2. Fetch data from Notion (Store Name, Phone, Socials, Images, etc.).
+3. Generate the new HTML (Apply rules: tel links, no empty sections, etc.).
+4. Create folder `C:\Users\Mouad\Desktop\MK7\[Store_Name_With_Underscores]`.
+5. Save `index.html` in that folder.
+6. Update Notion Status to "In review".
+7. **CONTINUE IMMEDIATELY** to the next "Not started" store.
+
+### STEP 3: GITHUB SYNC
+Once ALL stores are processed:
+1. Open terminal in `C:\Users\Mouad\Desktop\MK7\`.
+2. Run: `git add .` (The .gitignore will filter out scripts/rules automatically).
+3. Run: `git commit -m "[Table_Name] Batch Completed"`.
+4. Run: `git push origin main`.
+
+### STEP 4: LIVE LINKS
+For each store in the completed batch:
+1. Construct URL: `https://websitedesignmk7-svg.github.io/MK7/` + `Folder_Name`.
+2. Paste URL into the Notion "website" property.
+
+## 3. TRIGGER COMMANDS
+- "Build websites for the [TABLE NAME] table" -> Start the Autopilot Loop.
