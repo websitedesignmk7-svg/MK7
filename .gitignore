@@ -1,7 +1,5 @@
-*.js
-*.md
 .agents/
+*.js
+*.py
+*.md
 node_modules/
-build_store.js
-fix_store.js
-gen.js
