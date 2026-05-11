@@ -62,7 +62,6 @@
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
-            transform: scale(1.1);
         }
 
         .hero-image-side::after {
@@ -94,7 +93,7 @@
         .carousel-track {
             display: flex;
             width: max-content;
-            animation: scroll-infinite 20s linear infinite; 
+            animation: scroll-infinite 25s linear infinite; 
         }
         
         .carousel-container:hover .carousel-track {
@@ -243,18 +242,6 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.1rem;
         }
-        
-        .menu-item-content {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .menu-item-desc {
-            font-size: 0.75rem;
-            color: #888;
-            margin-top: 2px;
-        }
-
     </style>
 </head>
 <body>
@@ -262,7 +249,7 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 nav-blur border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold serif tracking-widest uppercase glow-text">Exotic barber shop <span class="gold-text">co.</span></div>
+            <div class="text-2xl font-bold serif tracking-widest uppercase glow-text">EXOTIC <span class="gold-text">BARBER SHOP</span></div>
             <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.25em] font-bold">
                 <a href="#home" class="nav-link-effect transition-colors">Home</a>
                 <a href="#gallery" class="nav-link-effect transition-colors">Salon</a>
@@ -278,15 +265,16 @@
         <div class="hero-image-side"></div>
         <div class="hero-content-side">
             <div class="gold-text uppercase tracking-[0.5em] text-[10px] mb-6 font-bold tracking-widest">Premium Barber Shop</div>
-            <h1 class="text-5xl md:text-7xl serif mb-8 leading-tight glow-text">Exotic barber shop</h1>
+            <h1 class="text-5xl md:text-7xl serif mb-8 leading-tight glow-text">Exotic <br><span class="gold-text">Barber Shop</span></h1>
             <p class="text-gray-400 text-sm md:text-base mb-10 font-light leading-relaxed">
-                Elite grooming services tailored for the modern gentleman. Experience superior craftsmanship in the heart of the city.
+                Expert grooming and modern styling in Anchorage. Your destination for the perfect cut and traditional service.
             </p>
             <div class="flex items-center gap-6">
                 <a href="#menu" class="inline-block bg-[#d4af37] text-black px-12 py-5 font-bold uppercase text-[10px] tracking-widest hover:bg-white transition-all shadow-[0_0_15px_rgba(212,175,55,0.3)]">Explore Prices</a>
-                <div class="flex gap-4"><a href="https://wa.me/19073327700" target="_blank" class="text-white/60 hover:text-[#25D366] hover:scale-110 transition-all text-2xl"><i class="fab fa-whatsapp"></i></a>
-<a href="https://www.instagram.com/exoticbarbershop_/" target="_blank" class="text-white/60 hover:text-[#E4405F] hover:scale-110 transition-all text-2xl"><i class="fab fa-instagram"></i></a>
-</div>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/19073327700" target="_blank" class="text-white/60 hover:text-[#25D366] hover:scale-110 transition-all text-2xl"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/exoticbarbershop_/" target="_blank" class="text-white/60 hover:text-[#E4405F] hover:scale-110 transition-all text-2xl"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -294,24 +282,24 @@
     <!-- Experience Carousel -->
     <section id="gallery" class="py-24 bg-black overflow-hidden relative border-y border-white/5">
         <div class="text-center mb-16 relative z-10">
-            <h3 class="gold-text uppercase tracking-[0.4em] text-xs mb-3 font-bold">The Republic Standards</h3>
+            <h3 class="gold-text uppercase tracking-[0.4em] text-xs mb-3 font-bold">Our Space</h3>
             <h2 class="text-5xl serif glow-text">SALON</h2>
         </div>
         
         <div class="carousel-container relative z-10">
-            <div class="carousel-track"><div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH9f9Zeb7uT5xnOZOd4oet1Nq9tNNdCNWqiHpcF3bmd72qZEbkFzHc9IU81svhmchNnGcs0KJgx_8hOPos4CiFy2ZSgFl88z-IJYX2p5lKvwYYeLAZwYhZz1n-cjZbKLzj8dVUqw7bxWWEq=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNFJjk8YskClRjr3er-ou5RAYAd29wVmtCu3rg=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGjBBqnbMOQVbyJ0Bi4ST_Gm6tgE7mgHZpClwfOjSAZa2_IF9mL7THoe_qVkkL8kkeKYn4tCZ1nMYMAddq0QmaBmOWE1LdN9xgLeT8D2Ey2nTHEvdAvDwwNRF5Q4jjDBWWVk4PA-3KQR7UX=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGeiUYyLD3mnQz3DDRAk5LxXrIWmjxxnx7Yqh-Vf1cDD4TRhl-3UZKPwnCGB7aDdOFp7ZxkpdQGThn-PrbAeLRfCAMOJsXMLo99UBM-oBOuSSVOSzZzLBGfVHGIJh-dis-zfdXWGJ9v96OA=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOMe-wmcl9o4PmFkUVf8qJ9rg7WiZemcJopBho=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNZ5skU9haVGfY5S76ERjpaVubN1r9ELNKUxNo=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipP5f7dPl1q4pP2rDG9WLkdnRZHeidaVKQunMr4=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipMNAR3_N_93sBADH10ezE9op2atO1bgY2VdcrQ=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipMYEZGn3NguW8JTcNgL7p3hNF_h438XoD8XcrQ=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPiluJOftXLVD5h7bDc4Dsj6ceCBpCNvDS_BDc=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipO_9rHin_mDd9NzSQwlDsa1qcBN65vFzeUnLKQ=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://d2zdpiztbgorvt.cloudfront.net/region1/us/1563530/biz_photo/38dcc31bb8e946ca92ca692e5c10a4-exotic-barber-shop-biz-photo-935aaf5b43f44f0a8dfe97ec70f129-booksy.jpeg" alt="Salon Picture"></div><div class="carousel-item"><img src="https://d2zdpiztbgorvt.cloudfront.net/region1/us/729067/biz_photo/2e2e2f267e9b4de6baf57cc551b0b8-adonay-style-biz-photo-1599d2d4b1d3494b892ae72e7db875-booksy.jpeg" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH9f9Zeb7uT5xnOZOd4oet1Nq9tNNdCNWqiHpcF3bmd72qZEbkFzHc9IU81svhmchNnGcs0KJgx_8hOPos4CiFy2ZSgFl88z-IJYX2p5lKvwYYeLAZwYhZz1n-cjZbKLzj8dVUqw7bxWWEq=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNFJjk8YskClRjr3er-ou5RAYAd29wVmtCu3rg=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGjBBqnbMOQVbyJ0Bi4ST_Gm6tgE7mgHZpClwfOjSAZa2_IF9mL7THoe_qVkkL8kkeKYn4tCZ1nMYMAddq0QmaBmOWE1LdN9xgLeT8D2Ey2nTHEvdAvDwwNRF5Q4jjDBWWVk4PA-3KQR7UX=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGeiUYyLD3mnQz3DDRAk5LxXrIWmjxxnx7Yqh-Vf1cDD4TRhl-3UZKPwnCGB7aDdOFp7ZxkpdQGThn-PrbAeLRfCAMOJsXMLo99UBM-oBOuSSVOSzZzLBGfVHGIJh-dis-zfdXWGJ9v96OA=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOMe-wmcl9o4PmFkUVf8qJ9rg7WiZemcJopBho=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNZ5skU9haVGfY5S76ERjpaVubN1r9ELNKUxNo=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipP5f7dPl1q4pP2rDG9WLkdnRZHeidaVKQunMr4=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipMNAR3_N_93sBADH10ezE9op2atO1bgY2VdcrQ=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipMYEZGn3NguW8JTcNgL7p3hNF_h438XoD8XcrQ=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPiluJOftXLVD5h7bDc4Dsj6ceCBpCNvDS_BDc=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipO_9rHin_mDd9NzSQwlDsa1qcBN65vFzeUnLKQ=s1360-w1360-h1020-rw" alt="Salon Picture"></div><div class="carousel-item"><img src="https://d2zdpiztbgorvt.cloudfront.net/region1/us/1563530/biz_photo/38dcc31bb8e946ca92ca692e5c10a4-exotic-barber-shop-biz-photo-935aaf5b43f44f0a8dfe97ec70f129-booksy.jpeg" alt="Salon Picture"></div><div class="carousel-item"><img src="https://d2zdpiztbgorvt.cloudfront.net/region1/us/729067/biz_photo/2e2e2f267e9b4de6baf57cc551b0b8-adonay-style-biz-photo-1599d2d4b1d3494b892ae72e7db875-booksy.jpeg" alt="Salon Picture"></div></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPmc3ohZMs7luxrIhGl2ozHQYZ-1_P7qFfE0oxI=s1360-w1360-h1020-rw" alt="Styling"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOfpOBPFG1zKhptuVVMj1y4uhiC1mvIFc79goi9=s1360-w1360-h1020-rw" alt="Details"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPi2D1BhLKO9Z8xw-VavUwAwKFAMv3hHCc5BJOz=s1360-w1360-h1020-rw" alt="Station"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipP05mow9JmQHgPMTZDsaFwXzmECrqv5WRqKW-i0=s1360-w1360-h1020-rw" alt="Vibe"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPoRKVRAA-N4sLMNQwdbOjqUAq_vc9eVNZ1CODG=s1360-w1360-h1020-rw" alt="Grooming"></div>
-                <!-- Clones for loop -->
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPcdqyNUucbj1-Jpb377toC4OslD4mBbhxnSwLi=s1360-w1360-h1020-rw" alt="Interior"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPmc3ohZMs7luxrIhGl2ozHQYZ-1_P7qFfE0oxI=s1360-w1360-h1020-rw" alt="Styling"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOfpOBPFG1zKhptuVVMj1y4uhiC1mvIFc79goi9=s1360-w1360-h1020-rw" alt="Details"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPi2D1BhLKO9Z8xw-VavUwAwKFAMv3hHCc5BJOz=s1360-w1360-h1020-rw" alt="Station"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipP05mow9JmQHgPMTZDsaFwXzmECrqv5WRqKW-i0=s1360-w1360-h1020-rw" alt="Vibe"></div>
-                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipPoRKVRAA-N4sLMNQwdbOjqUAq_vc9eVNZ1CODG=s1360-w1360-h1020-rw" alt="Grooming"></div>
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH9f9Zeb7uT5xnOZOd4oet1Nq9tNNdCNWqiHpcF3bmd72qZEbkFzHc9IU81svhmchNnGcs0KJgx_8hOPos4CiFy2ZSgFl88z-IJYX2p5lKvwYYeLAZwYhZz1n-cjZbKLzj8dVUqw7bxWWEq=s1360" alt="Exotic Barber Shop Interior"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNFJjk8YskClRjr3er-ou5RAYAd29wVmtCu3rg=s1360" alt="Workstation"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGjBBqnbMOQVbyJ0Bi4ST_Gm6tgE7mgHZpClwfOjSAZa2_IF9mL7THoe_qVkkL8kkeKYn4tCZ1nMYMAddq0QmaBmOWE1LdN9xgLeT8D2Ey2nTHEvdAvDwwNRF5Q4jjDBWWVk4PA-3KQR7UX=s1360" alt="Styling"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGeiUYyLD3mnQz3DDRAk5LxXrIWmjxxnx7Yqh-Vf1cDD4TRhl-3UZKPwnCGB7aDdOFp7ZxkpdQGThn-PrbAeLRfCAMOJsXMLo99UBM-oBOuSSVOSzZzLBGfVHGIJh-dis-zfdXWGJ9v96OA=s1360" alt="Barber Chair"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOMe-wmcl9o4PmFkUVf8qJ9rg7WiZemcJopBho=s1360" alt="Shop Atmosphere"></div>
+                
+                <!-- Cloned Items for Seamless Loop -->
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH9f9Zeb7uT5xnOZOd4oet1Nq9tNNdCNWqiHpcF3bmd72qZEbkFzHc9IU81svhmchNnGcs0KJgx_8hOPos4CiFy2ZSgFl88z-IJYX2p5lKvwYYeLAZwYhZz1n-cjZbKLzj8dVUqw7bxWWEq=s1360" alt="Exotic Barber Shop Interior"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipNFJjk8YskClRjr3er-ou5RAYAd29wVmtCu3rg=s1360" alt="Workstation"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGjBBqnbMOQVbyJ0Bi4ST_Gm6tgE7mgHZpClwfOjSAZa2_IF9mL7THoe_qVkkL8kkeKYn4tCZ1nMYMAddq0QmaBmOWE1LdN9xgLeT8D2Ey2nTHEvdAvDwwNRF5Q4jjDBWWVk4PA-3KQR7UX=s1360" alt="Styling"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGeiUYyLD3mnQz3DDRAk5LxXrIWmjxxnx7Yqh-Vf1cDD4TRhl-3UZKPwnCGB7aDdOFp7ZxkpdQGThn-PrbAeLRfCAMOJsXMLo99UBM-oBOuSSVOSzZzLBGfVHGIJh-dis-zfdXWGJ9v96OA=s1360" alt="Barber Chair"></div>
+                <div class="carousel-item"><img src="https://lh3.googleusercontent.com/p/AF1QipOMe-wmcl9o4PmFkUVf8qJ9rg7WiZemcJopBho=s1360" alt="Shop Atmosphere"></div>
             </div>
         </div>
     </section>
@@ -322,59 +310,73 @@
         
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-20 section-title">
-                <h3 class="gold-text uppercase tracking-[0.4em] text-xs mb-4 font-bold">Services Menu</h3>
-                <h2 class="text-5xl serif glow-text">Premium Grooming</h2>
+                <h3 class="gold-text uppercase tracking-[0.4em] text-xs mb-4 font-bold">Official Price List</h3>
+                <h2 class="text-5xl serif glow-text">Premium Grooming Services</h2>
             </div>
 
-            
-    <div class="grid md:grid-cols-2 gap-12">
-        <div class="space-y-12">
-            
-        <div class="menu-category-card">
-            <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center">
-                <i class="fas fa-cut mr-3 text-sm"></i> Hair Services
-            </h4>
-            <div class="space-y-2">
-                
-                <div class="menu-item">
-                    <span>Line up +Eyebrows</span>
-                    <span class="price-tag-sm">$25.00</span>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Column 1 -->
+                <div class="space-y-12">
+                    <div class="menu-category-card">
+                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i class="fas fa-cut mr-3 text-sm"></i> Hair & Grooming</h4>
+                        <div class="space-y-2">
+                            <div class="menu-item">
+                                <div>
+                                    <p class="font-bold">Line up + Eyebrows</p>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">15 MIN</p>
+                                </div>
+                                <span class="price-tag-sm">$25.00</span>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <p class="font-bold">Beard maintenance</p>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">15 MIN</p>
+                                </div>
+                                <span class="price-tag-sm">$25.00</span>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <p class="font-bold">Haircuts regular</p>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">25 MIN</p>
+                                </div>
+                                <span class="price-tag-sm">$40.00</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <span>Beard maintenance</span>
-                    <span class="price-tag-sm">$25.00</span>
-                </div>
-                <div class="menu-item">
-                    <span>Haircuts regular</span>
-                    <span class="price-tag-sm">$40.00</span>
+
+                <!-- Column 2 -->
+                <div class="space-y-12">
+                    <div class="menu-category-card">
+                        <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center"><i class="fas fa-magic mr-3 text-sm"></i> Specialized Packages</h4>
+                        <div class="space-y-2">
+                            <div class="menu-item">
+                                <div>
+                                    <p class="font-bold">Modern cut</p>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">30 MIN</p>
+                                </div>
+                                <span class="price-tag-sm">$45.00</span>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <p class="font-bold">Haircut + beard + hot towel</p>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">40 MIN</p>
+                                </div>
+                                <span class="price-tag-sm">$50.00</span>
+                            </div>
+                            <div class="menu-item">
+                                <div>
+                                    <p class="font-bold">Haircut and beard</p>
+                                    <p class="text-[10px] text-gray-500 uppercase tracking-widest">45 MIN</p>
+                                </div>
+                                <span class="price-tag-sm">$45.00</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        <div class="space-y-12">
-            
-        <div class="menu-category-card">
-            <h4 class="gold-text serif text-2xl mb-6 border-b border-gold/20 pb-2 flex items-center">
-                <i class="fas fa-magic mr-3 text-sm"></i> Beard & Finishing
-            </h4>
-            <div class="space-y-2">
-                
-                <div class="menu-item">
-                    <span>Modern cut</span>
-                    <span class="price-tag-sm">$45.00</span>
-                </div>
-                <div class="menu-item">
-                    <span>Haircut + beard + hot towel</span>
-                    <span class="price-tag-sm">$50.00</span>
-                </div>
-                <div class="menu-item">
-                    <span>Haircut an beard</span>
-                    <span class="price-tag-sm">$45.00</span>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div></div></section>
+    </section>
 
     <!-- Location & Contact -->
     <section id="location" class="py-24 bg-[#050505] px-6 border-t border-white/5 relative">
@@ -382,60 +384,45 @@
 
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
             <div class="location-details">
-                <h2 class="text-4xl serif mb-10 glow-text">Find Us</h2>
+                <h2 class="text-4xl serif mb-10 glow-text">Visit Our Salon</h2>
                 <div class="space-y-6">
-                    <a href="https://www.google.com/maps/place/Barbers+Republic+co+Wynyard/@-33.8662247,151.2050532,17z" target="_blank" class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors block">
-                        <i class="fas fa-location-dot gold-text text-xl"></i><p class="text-gray-300 text-sm">Exotic barber shop</p>
-                    </a>
-                    <a href="tel:+1 907-332-7700" class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors block">
-                        <i class="fas fa-phone gold-text text-xl"></i>
-                        <p class="text-gray-300 text-sm">+1 907-332-7700</p>
-                    </a>
                     <div class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors">
-                        <i class="fas fa-clock gold-text text-xl"></i>
-                        <p class="text-gray-300 text-sm leading-relaxed">Mon - Fri: 8:30 AM - 6:00 PM <br> Sat: 9:00 AM - 5:00 PM <br> Sun: <span class="gold-text font-bold uppercase">Closed</span></p>
+                        <i class="fas fa-location-dot gold-text text-xl"></i>
+                        <p class="text-gray-300 text-sm">420 W 5th Ave STE 205, Anchorage, AK 99501, USA</p>
                     </div>
-
+                    <a href="tel:+19073327700" class="flex items-center space-x-4 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-gold/30 transition-colors group">
+                        <i class="fas fa-phone gold-text text-xl"></i>
+                        <p class="text-gray-300 text-sm group-hover:text-white transition-colors">+1 907-332-7700</p>
+                    </a>
+                    
                     <div class="flex gap-4 pt-4">
-        <a href="https://wa.me/19073327700" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#25D366] transition-all duration-300 hover:shadow-[0_0_15px_rgba(37,211,102,0.25)] group hover:-translate-y-1">
-            <i class="fab fa-whatsapp text-2xl group-hover:scale-110 transition-transform" style="color: var(--whatsapp)"></i>
-            <span class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">WhatsApp</span>
-        </a>
-        <a href="https://www.instagram.com/exoticbarbershop_/" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#E4405F] transition-all duration-300 hover:shadow-[0_0_15px_rgba(228,64,95,0.25)] group hover:-translate-y-1">
-            <i class="fab fa-instagram text-2xl group-hover:scale-110 transition-transform" style="color: var(--instagram)"></i>
-            <span class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">Instagram</span>
-        </a></div>
+                        <a href="https://wa.me/19073327700" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#25D366] transition-all duration-300 hover:shadow-[0_0_15px_rgba(37,211,102,0.25)] group hover:-translate-y-1">
+                            <i class="fab fa-whatsapp text-2xl group-hover:scale-110 transition-transform" style="color: var(--whatsapp)"></i>
+                            <span class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">WhatsApp</span>
+                        </a>
+                        <a href="https://www.instagram.com/exoticbarbershop_/" target="_blank" class="flex-1 flex items-center justify-center space-x-3 p-4 bg-white/5 rounded-lg border border-white/5 hover:border-[#E4405F] transition-all duration-300 hover:shadow-[0_0_15px_rgba(228,64,95,0.25)] group hover:-translate-y-1">
+                            <i class="fab fa-instagram text-2xl group-hover:scale-110 transition-transform" style="color: var(--instagram)"></i>
+                            <span class="text-gray-300 text-sm font-semibold group-hover:text-white transition-colors">Instagram</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             
             <div class="h-[450px] rounded-2xl overflow-hidden border border-white/10 grayscale invert hover:grayscale-0 hover:invert-0 transition-all duration-[1.5s] map-container">
-                 <iframe src="https://maps.google.com/maps?q=Exotic%20barber%20shop&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1838.0319409053896!2d-149.87431022246755!3d61.20735087570417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c89715161197c5%3A0x45509aa9164aae80!2sExotic+barber+shop!5e0!3m2!1sen!2sus!4v1715442180000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <footer class="py-12 text-center border-t border-white/5 bg-[#030303]">
-        <div class="text-2xl font-bold serif mb-4 tracking-widest uppercase">Exotic barber shop<span class="gold-text">.</span></div>
-        <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em]">ALASKA's Premier Grooming Destination</p>
+        <div class="text-2xl font-bold serif mb-4 tracking-widest uppercase">EXOTIC BARBER SHOP<span class="gold-text">.</span></div>
+        <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em]">Anchorage's Premier Grooming Destination</p>
     </footer>
 
     <!-- GSAP Animations -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             gsap.registerPlugin(ScrollTrigger);
-
-            gsap.from(".hero-content-side", {
-                duration: 1.5,
-                x: 80,
-                opacity: 0,
-                ease: "power4.out"
-            });
-
-            gsap.to(".hero-image-side", {
-                duration: 2.5,
-                scale: 1,
-                ease: "power2.out"
-            });
 
             gsap.from(".section-title", {
                 scrollTrigger: {
@@ -455,7 +442,7 @@
                         start: "top 85%",
                         toggleActions: "play none none reverse"
                     },
-                    y: 50,
+                    y: 60,
                     opacity: 0,
                     duration: 0.9,
                     ease: "power2.out",
@@ -463,14 +450,15 @@
                 });
             });
 
-            gsap.from(".location-details", {
+            gsap.from(".location-details > div > div, .location-details > div > a", {
                 scrollTrigger: {
                     trigger: "#location",
                     start: "top 80%"
                 },
-                x: -30,
+                x: -40,
                 opacity: 0,
-                duration: 1,
+                duration: 0.8,
+                stagger: 0.15,
                 ease: "power3.out"
             });
 
@@ -479,7 +467,7 @@
                     trigger: "#location",
                     start: "top 80%"
                 },
-                scale: 0.95,
+                scale: 0.9,
                 opacity: 0,
                 duration: 1.2,
                 ease: "power2.out"
